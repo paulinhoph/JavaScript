@@ -1,117 +1,51 @@
 body{
-	margin: 0;
-	padding: 0;
-	background-color: #FFF;
-	font-family: 'Armata', sans-serif;
-	box-sizing:border-box;
-}
-header{
-	position: relative;
-	display: flex;
-	justify-content:center;
-	align-items: center;
-	flex-direction: column;
-
-}
-img{
-	width: 600px; 
-	height: 500px;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	top: 0;
-}
-img {
-    border: 2px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
+  //background:url(https://reli.sh/wp-content/themes/relish/assets/img/services/icon-games.png) center;
+  background-repeat: no-repeat;
+  background-size: 50%;
 }
 
-img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-h1{
-	position: relative;
-	top: 0;
-	
-}
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+h2{
+  color: #666;
+  font-family: monospace;
   text-align: center;
+  }
+.background{
+  table-layout: fixed;
+  border-spacing: 0;
+  }
+.background td {
+  padding: 0;
 }
 
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
+.lava, .actor {
+  background: #e55;
+}
+
+.wall {
+  background: silver;
+  border: solid 3px #333;
+  box-sizing: content-box;
+  }
+.actor{
   position: absolute;
-  top: 0;
 }
-
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
+  
+.coin{
+  background: blue;
   border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
 }
-
-.active, .dot:hover {
-  background-color: #717171;
+.player{
+  background: #4682B4;
+  box-shadow: none;
 }
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.lost .player { 
+  background: rgb(160, 64, 64);
 }
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.won .player {
+  background: #FFD700;
 }
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+  
+.game {
+  position: relative;
+  overflow: hidden;
+  }
